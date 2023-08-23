@@ -113,7 +113,7 @@ namespace HangulKeyboard
                     for (int k = 0; k < Last.Length; k++)
                     {
                         if (!StartsWith(text, Last[k], index + Mid[j].Length)) continue;
-                        if (max.Item1.Length < Mid[j].Length + Last[j].Length)
+                        if (max.Item1.Length < Mid[j].Length + Last[k].Length)
                             max = (Mid[j] + Last[k], (char)('\uAC00' + 6468 + 28 * j + k + 1));
                     }
                 }
